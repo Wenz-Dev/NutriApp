@@ -1,4 +1,4 @@
-from sqlalchemy import Mapped, mapped_column, relationship
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy import String, Date, Enum as SAEnum
 from infrastructure.database import Base
 from datetime import date
