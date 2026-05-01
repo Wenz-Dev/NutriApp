@@ -23,6 +23,7 @@ class Consulta(Base):
     # Mediciones
     peso: Mapped[float] = mapped_column(Float, nullable=False)
     altura: Mapped[float] = mapped_column(Float, nullable=False)
+    cinrcunferencia_cintura: Mapped[float] = mapped_column(Float, nullable=True)
     # Clinico
     actividad_fisica: Mapped[NivelActividad] = mapped_column(
         SAEnum(NivelActividad), nullable=False
